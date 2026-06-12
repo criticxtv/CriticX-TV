@@ -1,62 +1,41 @@
-body {
-  margin: 0;
-  font-family: Arial;
-  background: #0f0f0f;
-  color: white;
-}
+let hls;
 
-.header {
-  background: #e50914;
-  padding: 15px;
-  text-align: center;
-  font-size: 22px;
-  font-weight: bold;
-}
+function play(url) {
+    const video = document.getElementById("video");
+    const status = document.getElementById("status");
 
-.container {
-  display: flex;
-  height: 90vh;
-}
+    status.innerText = "Loading...";
 
-.sidebar {
-  width: 30%;
-  background: #1a1a1a;
-  padding: 10px;
-  overflow-y: auto;
-}
+    if (hls) {
+        hls.destroy();
+    }
 
-.sidebar button {
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 10px;
-  background: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 15px;
-  border-radius: 6px;
-}
+    if (Hls.isSupported()) {
 
-.sidebar button:hover {
-  background: #e50914;
-}
+        hls = new Hls();
 
-.player {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+        hls.loadSource(url);
+        hls.attachMedia(video);
 
-video {
-  width: 95%;
-  height: 75%;
-  background: black;
-  border-radius: 10px;
-}
+        hls.on(Hls.Events.MANIFEST_PARSED, function () {
+            video.play();
+            status.innerText = "Live Playing ✔";
+        });
 
-#status {
-  margin-top: 10px;
-  color: #aaa;
+        hls.on(Hls.Events.ERROR, function () {
+            status.innerText = "Stream Error ❌";
+        });
+
+    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+
+        video.src = url;
+
+        video.addEventListener("loadedmetadata", function () {
+            video.play();
+            status.innerText = "Live Playing ✔";
+        });
+
+    } else {
+        status.innerText = "HLS Not Supported ❌";
+    }
 }
