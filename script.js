@@ -3,8 +3,8 @@ const popup = document.getElementById("downloadPopup");
 const countdown = document.getElementById("countdown");
 const downloadCount = document.getElementById("downloadCount");
 
-let current = 3200;
-const target = 3400;
+let current = 9800;
+const target = 10000;
 
 function animateCounter() {
     const timer = setInterval(() => {
