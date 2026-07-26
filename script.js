@@ -12,7 +12,7 @@ function animateCounter() {
 
         if (current >= target) {
             clearInterval(timer);
-            downloadCount.textContent = "3.4K+";
+            downloadCount.textContent = "10K+";
         } else {
             downloadCount.textContent = current.toLocaleString();
         }
