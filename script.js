@@ -1,93 +1,161 @@
+// ===============================
+// CriticX TV Official Website
+// script.js
+// ===============================
+
+let APK_URL = "";
+
 const downloadBtn = document.getElementById("downloadBtn");
 const popup = document.getElementById("downloadPopup");
 const countdown = document.getElementById("countdown");
-const downloadCount = document.getElementById("downloadCount");
 
-let current = 9800;
-const target = 10000;
 
-function animateCounter() {
-    const timer = setInterval(() => {
-        current++;
+// ===================================
+// Download Button
+// ===================================
 
-        if (current >= target) {
-            clearInterval(timer);
-            downloadCount.textContent = "10K+";
-        } else {
-            downloadCount.textContent = current.toLocaleString();
-        }
-    }, 2);
-}
+downloadBtn.addEventListener("click", async (e) => {
 
-animateCounter();
-
-downloadBtn.addEventListener("click", (e) => {
     e.preventDefault();
 
-    const downloadUrl = downloadBtn.getAttribute("href");
+    APK_URL = downloadBtn.dataset.apk;
 
-    popup.style.display = "flex";
+    if (!APK_URL) {
+
+        alert("Download link is not available.");
+
+        return;
+
+    }
+
     downloadBtn.style.pointerEvents = "none";
 
+    // Increase Download Counter
+    if (window.addDownload) {
+
+        await window.addDownload();
+
+    }
+
+    popup.style.display = "flex";
+
     let time = 3;
-    countdown.textContent = time;
+
+    countdown.innerHTML = time;
 
     const timer = setInterval(() => {
+
         time--;
-        countdown.textContent = time;
+
+        countdown.innerHTML = time;
 
         if (time <= 0) {
+
             clearInterval(timer);
 
             popup.style.display = "none";
+
             downloadBtn.style.pointerEvents = "auto";
 
-            window.location.href = downloadUrl;
+            window.location.href = APK_URL;
+
         }
+
     }, 1000);
+
 });
+
+
+// ===================================
+// Screenshot Auto Slider
+// ===================================
 
 const screenList = document.querySelector(".screen-list");
 
 if (screenList) {
+
     let direction = 1;
 
     setInterval(() => {
+
         if (direction === 1) {
-            screenList.scrollBy({
-                left: 280,
-                behavior: "smooth"
-            });
 
-            if (screenList.scrollLeft >= screenList.scrollWidth - screenList.clientWidth - 10) {
-                direction = -1;
+            screenList.scrollLeft += 280;
+
+            if (
+
+                screenList.scrollLeft >=
+
+                screenList.scrollWidth -
+
+                screenList.clientWidth
+
+            ) {
+
+                direction = 0;
+
             }
+
         } else {
-            screenList.scrollBy({
-                left: -280,
-                behavior: "smooth"
-            });
 
-            if (screenList.scrollLeft <= 10) {
+            screenList.scrollLeft -= 280;
+
+            if (screenList.scrollLeft <= 0) {
+
                 direction = 1;
+
             }
+
         }
+
     }, 2500);
+
 }
 
+
+// ===================================
+// Fade Animation
+// ===================================
+
 const observer = new IntersectionObserver((entries) => {
+
     entries.forEach((entry) => {
+
         if (entry.isIntersecting) {
+
             entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
+
+            entry.target.style.transform = "translateY(0px)";
+
         }
+
     });
+
 });
 
-document.querySelectorAll(".card, .feature-card, .why, .community, .ads, .screenshots").forEach((element) => {
-    element.style.opacity = "0";
-    element.style.transform = "translateY(40px)";
-    element.style.transition = "0.8s";
+document
 
-    observer.observe(element);
+.querySelectorAll(
+
+".card,.feature-card,.screenshots,.why,.community,.ads"
+
+)
+
+.forEach((el) => {
+
+    el.style.opacity = "0";
+
+    el.style.transform = "translateY(40px)";
+
+    el.style.transition = ".8s";
+
+    observer.observe(el);
+
 });
+
+
+// ===================================
+// Console
+// ===================================
+
+console.log("CriticX TV Official Website Loaded 🚀");
