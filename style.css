@@ -1,555 +1,1038 @@
-<!DOCTYPE html>
-<html lang="en">
+/\* ===========================
+CriticX TV Download Center
+Style.css (Part 1)
+\=========================== \*/
 
-<head>
+\*{
+margin:0;
+padding:0;
+box-sizing\:border-box;
+font-family:"Segoe UI",sans-serif;
+}
 
-    <meta charset="UTF-8">
+html{
+scroll-behavior\:smooth;
+}
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+body{
 
-    <title>CriticX TV - Official Download Center</title>
+```
+background:linear-gradient(
+    135deg,
+    #07111f,
+    #0d1b2a,
+    #10243e
+);
 
-    <link rel="icon" type="image/png" href="assets/logo.png">
+color:#fff;
 
-    <link rel="stylesheet" href="style.css">
+min-height:100vh;
 
-</head>
+overflow-x:hidden;
+```
 
-<body>
+}
 
+/\* Container \*/
 
-    <!-- ===========================
-         Hero Section
-    ============================ -->
+.container{
 
-    <section class="hero">
+```
+width:92%;
 
-        <div class="container">
+max-width:1150px;
 
-            <img src="assets/logo.png"
-                 alt="CriticX TV Logo"
-                 class="logo">
+margin:auto;
+```
 
+}
 
-            <span class="badge">
-                🌐 Official Website
-            </span>
+/\* Hero \*/
 
+.hero{
 
-            <h1 id="appName">
-                📺 CriticX TV
-            </h1>
+```
+padding:70px 0;
 
+text-align:center;
+```
 
-            <p class="tagline"
-               id="description">
+}
 
-                CriticX TV brings your favorite
-                Live TV, Sports, Movies,
-                Entertainment and Breaking News
-                together in one place.
+/\* Logo \*/
 
-                Enjoy smooth, fast and
-                high-quality streaming
-                anytime, anywhere.
+.logo{
 
-            </p>
+```
+width:130px;
 
+height:130px;
 
-            <!-- Stats -->
+border-radius:28px;
 
-            <div class="stats">
+margin-bottom:25px;
 
+box-shadow:
+0 10px 35px rgba(0,0,0,.45);
+```
 
-                <div class="card">
+}
 
-                    <div class="icon">
-                        ⭐
-                    </div>
+/\* Badge \*/
 
-                    <h2>
-                        4.8
-                    </h2>
+.badge{
 
-                    <p>
-                        Rating
-                    </p>
+```
+display:inline-block;
 
-                </div>
+background:#ff9800;
 
+color:#fff;
 
-                <div class="card">
+padding:9px 22px;
 
-                    <div class="icon">
-                        📥
-                    </div>
+border-radius:30px;
 
-                    <h2 id="downloadCount">
-                        ...
-                    </h2>
+font-weight:bold;
 
-                    <p>
-                        Downloads
-                    </p>
+margin-bottom:18px;
 
-                </div>
+letter-spacing:.5px;
+```
 
+}
 
-                <div class="card">
+/\* Title \*/
 
-                    <div class="icon">
-                        🛡️
-                    </div>
+.hero h1{
 
-                    <h2>
-                        Safe
-                    </h2>
+```
+font-size:48px;
 
-                    <p>
-                        Verified
-                    </p>
+margin-bottom:18px;
+```
 
-                </div>
+}
 
+/\* Description \*/
 
-            </div>
+.tagline{
 
+```
+max-width:760px;
 
-            <!-- Download Button -->
+margin:auto;
 
-            <a href="#"
-               id="downloadBtn"
-               class="download-btn">
+color:#c9d5e4;
 
-                📥 Download APK
+line-height:1.8;
 
-            </a>
+font-size:18px;
+```
 
+}
 
-            <!-- Version -->
+/\* Stats \*/
 
-            <div class="version-box">
+.stats{
 
-                <p>
+```
+display:flex;
 
-                    <b>Version :</b>
+justify-content:center;
 
-                    <span id="version">
-                        1.0
-                    </span>
+gap:20px;
 
-                </p>
+margin-top:45px;
 
+flex-wrap:wrap;
+```
 
-                <p>
+}
 
-                    <b>Size :</b>
+/\* Card \*/
 
-                    <span>
-                        52 MB
-                    </span>
+.card{
 
-                </p>
+```
+width:180px;
 
+padding:25px;
 
-                <p>
+border-radius:20px;
 
-                    <b>Updated :</b>
+background:rgba(255,255,255,.05);
 
-                    <span id="updated">
-                        July 2026
-                    </span>
+backdrop-filter:blur(16px);
 
-                </p>
+border:1px solid rgba(255,255,255,.08);
 
-            </div>
+transition:.35s;
+```
 
+}
 
-        </div>
+.card\:hover{
 
-    </section>
+```
+transform:translateY(-8px);
 
+box-shadow:
 
-    <!-- ===========================
-         Features
-    ============================ -->
+0 15px 35px rgba(0,0,0,.35);
+```
 
-    <section class="features">
+}
 
-        <div class="container">
+.icon{
 
-            <h2>
-                🔥 Features
-            </h2>
+```
+font-size:34px;
+```
 
+}
 
-            <div class="feature-grid">
+.card h2{
 
+```
+margin:15px 0;
 
-                <div class="feature-card">
+font-size:30px;
+```
 
-                    ⚽
+}
 
-                    <h3>
-                        Live Sports
-                    </h3>
+.card p{
 
-                    <p>
-                        Football, Cricket &
-                        More.
-                    </p>
+```
+color:#d4d4d4;
+```
 
-                </div>
+}
 
+/\* Download Button \*/
 
-                <div class="feature-card">
+.download-btn{
 
-                    🎬
+```
+display:inline-block;
 
-                    <h3>
-                        Movies
-                    </h3>
+margin-top:45px;
 
-                    <p>
-                        Watch Popular Movie
-                        Channels.
-                    </p>
+text-decoration:none;
 
-                </div>
+background:linear-gradient(
+    90deg,
+    #2563eb,
+    #3b82f6
+);
 
+color:#fff;
 
-                <div class="feature-card">
+padding:18px 42px;
 
-                    📺
+border-radius:15px;
 
-                    <h3>
-                        Live TV
-                    </h3>
+font-size:20px;
 
-                    <p>
-                        100+ Live TV
-                        Channels.
-                    </p>
+font-weight:bold;
 
-                </div>
+transition:.35s;
+```
 
+}
 
-                <div class="feature-card">
+.download-btn\:hover{
 
-                    📰
+```
+transform:scale(1.05);
 
-                    <h3>
-                        News
-                    </h3>
+box-shadow:
 
-                    <p>
-                        Breaking News
-                        Anytime.
-                    </p>
+0 15px 40px rgba(37,99,235,.45);
+```
 
-                </div>
+}
 
+/\* Version \*/
 
-                <div class="feature-card">
+.version-box{
 
-                    ⚡
+```
+margin-top:30px;
 
-                    <h3>
-                        Fast Streaming
-                    </h3>
+display:inline-block;
 
-                    <p>
-                        Buffer-Free
-                        Experience.
-                    </p>
+text-align:left;
 
-                </div>
+background:rgba(255,255,255,.05);
 
+border:1px solid rgba(255,255,255,.08);
 
-                <div class="feature-card">
+backdrop-filter:blur(18px);
 
-                    📡
+border-radius:18px;
 
-                    <h3>
-                        HD Quality
-                    </h3>
+padding:22px 30px;
 
-                    <p>
-                        Crystal Clear
-                        Streaming.
-                    </p>
+line-height:2;
 
-                </div>
+color:#d6d6d6;
+```
 
+}/\* ===========================
+Part 2
+Features • Screenshots
+Community • Banner • Why
+\=========================== \*/
 
-            </div>
+/\* Features \*/
 
-        </div>
+.features{
 
-    </section>
+```
+padding:80px 0;
+```
 
+}
 
-    <!-- ===========================
-         App Screenshots
-    ============================ -->
+.features h2{
 
-    <section class="screenshots">
+```
+text-align:center;
 
-        <div class="container">
+font-size:36px;
 
-            <h2>
-                📱 App Screenshots
-            </h2>
+margin-bottom:40px;
+```
 
+}
 
-            <div class="screen-list">
+.feature-grid{
 
-                <img src="assets/screen1.png"
-                     alt="Screenshot 1">
+```
+display:grid;
 
-                <img src="assets/screen2.png"
-                     alt="Screenshot 2">
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 
-                <img src="assets/screen3.png"
-                     alt="Screenshot 3">
+gap:25px;
+```
 
-            </div>
+}
 
-        </div>
+.feature-card{
 
-    </section>
+```
+background:rgba(255,255,255,.05);
 
+backdrop-filter:blur(16px);
 
-    <!-- ===========================
-         Why Choose CriticX TV
-    ============================ -->
+border:1px solid rgba(255,255,255,.08);
 
-    <section class="why">
+border-radius:20px;
 
-        <div class="container">
+padding:30px;
 
-            <h2>
-                ⭐ Why Choose CriticX TV?
-            </h2>
+text-align:center;
 
+transition:.35s;
+```
 
-            <ul>
+}
 
-                <li>
-                    ✔ 100+ Live TV Channels
-                </li>
+.feature-card\:hover{
 
-                <li>
-                    ✔ Live Sports Streaming
-                </li>
+```
+transform:translateY(-10px);
 
-                <li>
-                    ✔ Movies & Entertainment
-                </li>
+box-shadow:0 20px 40px rgba(0,0,0,.35);
+```
 
-                <li>
-                    ✔ HD Streaming Experience
-                </li>
+}
 
-                <li>
-                    ✔ Android TV Support
-                </li>
+.feature-card{
 
-                <li>
-                    ✔ Regular Updates
-                </li>
+```
+font-size:18px;
+```
 
-                <li>
-                    ✔ Safe & Secure APK
-                </li>
+}
 
-                <li>
-                    ✔ User Friendly Interface
-                </li>
+.feature-card h3{
 
-            </ul>
+```
+margin:15px 0;
 
-        </div>
+font-size:24px;
+```
 
-    </section>
+}
 
+.feature-card p{
 
-    <!-- ===========================
-         Join Community
-    ============================ -->
+```
+color:#c8d2df;
 
-    <section class="community">
+line-height:1.6;
+```
 
-        <div class="container">
+}
 
-            <h2>
-                💬 Join Our Community
-            </h2>
+/\* Screenshots \*/
 
+.screenshots{
 
-            <p class="community-text">
+```
+padding:70px 0;
+```
 
-                Get the latest updates,
-                new channels,
-                announcements,
-                and technical support
-                by joining our official Telegram channel.
+}
 
-            </p>
+.screenshots h2{
 
+```
+text-align:center;
 
-            <a id="telegramBtn"
-               href="https://t.me/+6hda0WkWAYNiMWQ1"
-               target="_blank"
-               class="telegram">
+font-size:36px;
 
-                ✈️ Join Our Telegram Channel
+margin-bottom:35px;
+```
 
-            </a>
+}
 
-        </div>
+.screen-list{
 
-    </section>
+```
+display:flex;
 
+gap:25px;
 
-    <!-- ===========================
-         What's New
-    ============================ -->
+overflow-x:auto;
 
-    <section class="whats-new">
+scroll-behavior:smooth;
 
-        <div class="container">
+padding:15px;
+```
 
-            <h2>
-                🆕 What's New
-            </h2>
+}
 
+.screen-list::-webkit-scrollbar{
 
-            <div class="version-card">
+```
+height:8px;
+```
 
-                <h3 id="latest">
-                    Initial Official Release
-                </h3>
+}
 
+.screen-list::-webkit-scrollbar-thumb{
 
-                <p>
-                    ✔ Improved Streaming Performance
-                </p>
+```
+background:#3b82f6;
 
+border-radius:20px;
+```
 
-                <p>
-                    ✔ Better Android TV Support
-                </p>
+}
 
+.screen-list img{
 
-                <p>
-                    ✔ UI Improvements
-                </p>
+```
+width:250px;
 
+border-radius:22px;
 
-                <p>
-                    ✔ Performance Optimizations
-                </p>
+transition:.35s;
 
-            </div>
+box-shadow:0 10px 35px rgba(0,0,0,.4);
+```
 
-        </div>
+}
 
-    </section>
+.screen-list img\:hover{
 
+```
+transform:scale(1.05);
+```
 
-    <!-- ===========================
-         Advertisement
-    ============================ -->
+}
 
-    <section class="ads">
+/\* Why Choose \*/
 
-        <div class="container">
+.why{
 
-            <h2>
-                📢 Sponsored
-            </h2>
+```
+padding:80px 0;
+```
 
+}
 
-            <div id="bannerAd"
-                 class="banner-ad">
+.why .container{
 
-                Advertisement Space
+```
+background:rgba(255,255,255,.05);
 
-            </div>
+border:1px solid rgba(255,255,255,.08);
 
-        </div>
+backdrop-filter:blur(18px);
 
-    </section>
+border-radius:25px;
 
+padding:40px;
+```
 
-    <!-- ===========================
-         Footer
-    ============================ -->
+}
 
-    <footer>
+.why h2{
 
-        <div class="container">
+```
+text-align:center;
 
-            <p>
-                © 2026 CriticX TV. All Rights Reserved.
-            </p>
+margin-bottom:30px;
 
-        </div>
+font-size:34px;
+```
 
-    </footer>
+}
 
+.why ul{
 
-    <!-- ===========================
-         Download Popup
-    ============================ -->
+```
+list-style:none;
+```
 
-    <div id="downloadPopup"
-         class="popup">
+}
 
-        <div class="popup-box">
+.why li{
 
-            <h2>
-                📥 Preparing Download...
-            </h2>
+```
+font-size:18px;
 
+padding:14px 0;
 
-            <p>
-                Please wait while we prepare your download.
-            </p>
+border-bottom:1px solid rgba(255,255,255,.08);
+```
 
+}
 
-            <h1 id="countdown">
-                3
-            </h1>
+.why li\:last-child{
 
+```
+border:none;
+```
 
-            <div class="loader"></div>
+}
 
+/\* Community \*/
 
-            <p class="popup-note">
-                Your download will start automatically...
-            </p>
+.community{
 
-        </div>
+```
+padding:80px 0;
 
-    </div>
+text-align:center;
+```
 
+}
 
-    <!-- ===========================
-         Firebase
-    ============================ -->
+.community h2{
 
-    <script type="module"
-            src="firebase/firebase-service.js">
-    </script>
+```
+font-size:36px;
 
+margin-bottom:35px;
+```
 
-    <!-- Main Script -->
+}
 
-    <script src="script.js"></script>
+.community a{
 
+```
+display:block;
 
-</body>
+width:320px;
 
-</html>
+max-width:100%;
+
+margin:15px auto;
+
+padding:18px;
+
+text-decoration:none;
+
+color:#fff;
+
+border-radius:16px;
+
+font-size:18px;
+
+font-weight:bold;
+
+transition:.35s;
+```
+
+}
+
+.community a\:hover{
+
+```
+transform:translateY(-5px);
+```
+
+}
+
+.messenger{
+
+```
+background:#0084ff;
+```
+
+}
+
+.telegram{
+
+```
+background:#229ED9;
+```
+
+}
+
+/\* Banner Ad \*/
+
+.ads{
+
+```
+padding:80px 0;
+
+text-align:center;
+```
+
+}
+
+.ads h2{
+
+```
+margin-bottom:30px;
+
+font-size:34px;
+```
+
+}
+
+.banner-ad{
+
+```
+background:rgba(255,255,255,.05);
+
+border:2px dashed rgba(255,255,255,.15);
+
+border-radius:22px;
+
+height:120px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:#bfc9d7;
+
+font-size:22px;
+
+font-weight:bold;
+```
+
+}/\* ===========================
+Part 3
+Footer • Popup • Animation
+Responsive Design
+\=========================== \*/
+
+/\* Footer \*/
+
+footer{
+
+```
+margin-top:80px;
+
+padding:35px 20px;
+
+background:#08111d;
+
+text-align:center;
+
+border-top:1px solid rgba(255,255,255,.08);
+```
+
+}
+
+footer p{
+
+```
+color:#bfc9d7;
+
+margin-bottom:15px;
+```
+
+}
+
+footer a{
+
+```
+color:#3b82f6;
+
+text-decoration:none;
+
+margin:0 10px;
+
+transition:.3s;
+```
+
+}
+
+footer a\:hover{
+
+```
+color:#ffffff;
+```
+
+}
+
+/\* Download Popup \*/
+
+.popup{
+
+```
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.75);
+
+display:none;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+```
+
+}
+
+.popup-box{
+
+```
+width:340px;
+
+max-width:90%;
+
+background:#132033;
+
+border-radius:25px;
+
+padding:35px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.08);
+
+animation:popupShow .35s ease;
+```
+
+}
+
+.popup-box h2{
+
+```
+margin-bottom:15px;
+```
+
+}
+
+.popup-box p{
+
+```
+color:#d4d4d4;
+
+margin-bottom:20px;
+```
+
+}
+
+\#countdown{
+
+```
+font-size:72px;
+
+color:#3b82f6;
+
+margin:15px 0;
+```
+
+}
+
+/\* Loader \*/
+
+.loader{
+
+```
+width:55px;
+
+height:55px;
+
+border:5px solid rgba(255,255,255,.15);
+
+border-top:5px solid #3b82f6;
+
+border-radius:50%;
+
+margin:auto;
+
+animation:spin 1s linear infinite;
+```
+
+}
+
+/\* Animations \*/
+
+@keyframes spin{
+
+```
+100%{
+
+    transform:rotate(360deg);
+
+}
+```
+
+}
+
+@keyframes popupShow{
+
+```
+from{
+
+    opacity:0;
+
+    transform:scale(.8);
+
+}
+
+to{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+```
+
+}
+
+@keyframes float{
+
+```
+0%{
+
+    transform:translateY(0);
+
+}
+
+50%{
+
+    transform:translateY(-8px);
+
+}
+
+100%{
+
+    transform:translateY(0);
+
+}
+```
+
+}
+
+/\* Floating Logo \*/
+
+.logo{
+
+```
+animation:float 3s ease-in-out infinite;
+```
+
+}
+
+/\* Smooth Transition \*/
+
+a,
+button,
+.card,
+.feature-card,
+.banner-ad,
+.community a{
+
+```
+transition:.35s;
+```
+
+}
+
+/\* Mobile \*/
+
+@media(max-width:768px){
+
+.hero h1{
+
+```
+font-size:36px;
+```
+
+}
+
+.tagline{
+
+```
+font-size:16px;
+```
+
+}
+
+.stats{
+
+```
+flex-direction:column;
+
+align-items:center;
+```
+
+}
+
+.card{
+
+```
+width:100%;
+
+max-width:320px;
+```
+
+}
+
+.download-btn{
+
+```
+width:100%;
+```
+
+}
+
+.feature-grid{
+
+```
+grid-template-columns:1fr;
+```
+
+}
+
+.screen-list img{
+
+```
+width:220px;
+```
+
+}
+
+.community a{
+
+```
+width:100%;
+```
+
+}
+
+.banner-ad{
+
+```
+height:100px;
+
+font-size:18px;
+```
+
+}
+
+footer{
+
+```
+font-size:14px;
+```
+
+}
+
+}
+
+/\* Small Mobile \*/
+
+@media(max-width:480px){
+
+.logo{
+
+```
+width:105px;
+
+height:105px;
+```
+
+}
+
+.hero{
+
+```
+padding:50px 0;
+```
+
+}
+
+.hero h1{
+
+```
+font-size:30px;
+```
+
+}
+
+.features h2,
+.screenshots h2,
+.community h2,
+.ads h2,
+.why h2{
+
+```
+font-size:28px;
+```
+
+}
+
+.popup-box{
+
+```
+padding:28px;
+```
+
+}
+
+\#countdown{
+
+```
+font-size:58px;
+```
+
+}
+
+}
