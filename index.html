@@ -1,297 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#07111f">
-    <meta name="description" content="Download CriticX TV — Live TV, sports, movies, entertainment and breaking news in one place.">
-    <title>CriticX TV - Official Download Center</title>
-
-    <link rel="icon" type="image/png" href="assets/logo.png">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b12">
+  <meta name="description" content="Download CriticX TV — Live TV, sports, movies, entertainment and breaking news in one place.">
+  <title>CriticX TV — Your Screen. Your World.</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <img
-                src="assets/logo.png"
-                alt="CriticX TV Logo"
-                class="logo"
-            >
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
 
-            <span class="badge">🌐 Official Website</span>
-
-            <h1 id="appName">📺 CriticX TV</h1>
-
-            <p class="tagline" id="description">
-                CriticX TV brings your favorite Live TV, Sports, Movies,
-                Entertainment and Breaking News together in one place.
-                Enjoy smooth, fast and high-quality streaming anytime, anywhere.
-            </p>
-
-            <!-- Stats -->
-            <div class="stats">
-                <div class="card">
-                    <div class="icon">⭐</div>
-                    <h2>4.8</h2>
-                    <p>Rating</p>
-                </div>
-
-                <div class="card">
-                    <div class="icon">📥</div>
-                    <h2 id="downloadCount">...</h2>
-                    <p>Downloads</p>
-                </div>
-
-                <div class="card">
-                    <div class="icon">🛡️</div>
-                    <h2>Safe</h2>
-                    <p>Verified</p>
-                </div>
-            </div>
-
-            <!-- Download Button -->
-            <a href="#" id="downloadBtn" class="download-btn">
-                📥 Download APK
-                <span class="download-arrow" aria-hidden="true">↓</span>
-            </a>
-
-            <!-- Version Details -->
-            <div class="version-box">
-                <p>
-                    <b>Version:</b>
-                    <span id="version">1.0</span>
-                </p>
-                <p>
-                    <b>Size:</b>
-                    <span>52 MB</span>
-                </p>
-                <p>
-                    <b>Updated:</b>
-                    <span id="updated">July 2026</span>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features -->
-    <section class="features" id="features">
-        <div class="container">
-            <div class="section-heading">
-                <span class="section-kicker">WHAT YOU GET</span>
-                <h2>🔥 Features</h2>
-                <p>Everything you enjoy, brought together in one app.</p>
-            </div>
-
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">⚽</div>
-                    <h3>Live Sports</h3>
-                    <p>Football, Cricket &amp; More.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🎬</div>
-                    <h3>Movies</h3>
-                    <p>Watch Popular Movie Channels.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">📺</div>
-                    <h3>Live TV</h3>
-                    <p>100+ Live TV Channels.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">📰</div>
-                    <h3>News</h3>
-                    <p>Breaking News Anytime.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Fast Streaming</h3>
-                    <p>Buffer-Free Experience.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">📡</div>
-                    <h3>HD Quality</h3>
-                    <p>Crystal Clear Streaming.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- App Screenshots -->
-    <section class="screenshots" id="screenshots">
-        <div class="container">
-            <div class="section-heading">
-                <span class="section-kicker">TAKE A LOOK</span>
-                <h2>📱 App Screenshots</h2>
-                <p>A quick look at the CriticX TV experience.</p>
-            </div>
-
-            <div class="screen-list">
-                <img src="assets/screen1.png" alt="CriticX TV app screenshot 1" loading="lazy">
-                <img src="assets/screen2.png" alt="CriticX TV app screenshot 2" loading="lazy">
-                <img src="assets/screen3.png" alt="CriticX TV app screenshot 3" loading="lazy">
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose CriticX TV -->
-    <section class="why" id="why-criticx">
-        <div class="container">
-            <div class="why-content">
-                <div class="section-heading">
-                    <span class="section-kicker">MADE FOR YOUR SCREEN</span>
-                    <h2>⭐ Why Choose CriticX TV?</h2>
-                </div>
-
-                <ul>
-                    <li>✔ 100+ Live TV Channels</li>
-                    <li>✔ Live Sports Streaming</li>
-                    <li>✔ Movies &amp; Entertainment</li>
-                    <li>✔ HD Streaming Experience</li>
-                    <li>✔ Android TV Support</li>
-                    <li>✔ Regular Updates</li>
-                    <li>✔ Safe &amp; Secure APK</li>
-                    <li>✔ User Friendly Interface</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Join Community -->
-    <section class="community" id="community">
-        <div class="container">
-            <div class="section-heading">
-                <span class="section-kicker">STAY CONNECTED</span>
-                <h2>💬 Join Our Community</h2>
-                <p class="community-text">
-                    Get the latest updates, new channels, announcements,
-                    and technical support by joining our official community.
-                </p>
-            </div>
-
-            <div class="community-links">
-                <a
-                    id="messengerBtn"
-                    href="https://m.me/j/AbZlksWYYxeOmd2c/?send_source=gc%3Acopy_invite_link_t"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="messenger"
-                >
-                    💬 Join Messenger Group
-                </a>
-
-                <a
-                    id="telegramBtn"
-                    href="https://t.me/+6hda0WkWAYNiMWQ1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="telegram"
-                >
-                    ✈️ Join Telegram Group
-                </a>
-
-                <a
-                    id="telegramChannelBtn"
-                    href="https://t.me/criticxtv"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="telegram"
-                >
-                    📢 Follow Telegram Channel
-                </a>
-
-                <a
-                    id="facebookBtn"
-                    href="https://facebook.com/criticxtv"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="messenger"
-                >
-                    📘 Follow Facebook Page
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- What's New -->
-    <section class="whats-new" id="whats-new">
-        <div class="container">
-            <div class="section-heading">
-                <span class="section-kicker">LATEST UPDATE</span>
-                <h2>🆕 What's New</h2>
-            </div>
-
-            <div class="version-card">
-                <div class="version-card-top">
-                    <span class="update-dot"></span>
-                    <span>Latest Version</span>
-                </div>
-
-                <h3 id="latest">Initial Official Release</h3>
-                <p>✔ Improved Streaming Performance</p>
-                <p>✔ Better Android TV Support</p>
-                <p>✔ UI Improvements</p>
-                <p>✔ Performance Optimizations</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Advertisement -->
-    <section class="ads" id="sponsored">
-        <div class="container">
-            <div class="section-heading">
-                <span class="section-kicker">PARTNERS</span>
-                <h2>📢 Sponsored</h2>
-            </div>
-
-            <div id="bannerAd" class="banner-ad">
-                Advertisement Space
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <a class="footer-brand" href="#home">📺 CriticX TV</a>
-            <p>© 2026 CriticX TV. All Rights Reserved.</p>
-
-            <div class="footer-links">
-                <a href="pages/privacy.html">Privacy Policy</a>
-                <span>|</span>
-                <a href="pages/terms.html">Terms of Service</a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Download Popup -->
-    <div id="downloadPopup" class="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
-        <div class="popup-box">
-            <div class="popup-icon">📥</div>
-            <h2 id="popupTitle">Preparing Download...</h2>
-            <p>Please wait while we prepare your download.</p>
-
-            <h1 id="countdown">3</h1>
-            <div class="loader"></div>
-
-            <p class="popup-note">
-                Your download will start automatically...
-            </p>
-        </div>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#home" aria-label="CriticX TV home">
+        <img src="assets/logo.png" alt="" class="brand-mark">
+        <span>CRITIC<span class="brand-x">X</span><small>TELEVISION</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#features">Features</a><a href="#screenshots">Preview</a><a href="#community">Community</a>
+      </nav>
+      <a href="#downloadBtn" class="nav-download">Get the app <span>↗</span></a>
     </div>
+  </header>
 
-    <!-- Firebase -->
-    <script type="module" src="firebase/firebase-service.js"></script>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-dot"></span> THE OFFICIAL CRITICX TV EXPERIENCE</div>
+          <h1 id="appName">Entertainment<br><em>without limits.</em></h1>
+          <p class="tagline" id="description">CriticX TV brings your favorite Live TV, Sports, Movies, Entertainment and Breaking News together in one place. Enjoy smooth, fast and high-quality streaming anytime, anywhere.</p>
+          <div class="hero-actions">
+            <a href="#" id="downloadBtn" class="download-btn"><span class="download-icon">↓</span><span>Download APK<small>Start watching in seconds</small></span><span class="download-arrow">↗</span></a>
+            <a href="#features" class="explore-link">Explore the experience <span>↓</span></a>
+          </div>
+          <div class="trust-line"><span class="trust-stars">★★★★★</span><span>Made for everyday entertainment</span><i></i><span>Android &amp; Android TV</span></div>
+        </div>
+        <div class="hero-art" aria-label="CriticX TV app artwork">
+          <div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div>
+          <div class="art-glow"></div>
+          <div class="screen-frame">
+            <div class="screen-top"><span class="screen-brand"><b>CX</b> CRITICX TV</span><span class="screen-live"><i></i> LIVE</span></div>
+            <div class="screen-feature">
+              <div class="screen-label">YOUR ENTERTAINMENT HUB</div>
+              <div class="screen-title">ONE APP.<br><strong>ENDLESS</strong><br>ENTERTAINMENT.</div>
+              <div class="screen-categories"><span>LIVE TV</span><span>SPORTS</span><span>MOVIES</span></div>
+            </div>
+            <div class="screen-bottom"><span>STREAM YOUR WAY</span><span>● ● ●</span></div>
+          </div>
+          <div class="floating-chip chip-top"><span>◉</span> Live channels</div>
+          <div class="floating-chip chip-bottom"><span>✦</span> Your screen, upgraded</div>
+          <div class="hero-index">01 <span>/</span> 04</div>
+        </div>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-item"><span class="meta-icon">✦</span><div><strong>4.8 / 5</strong><small>App rating</small></div></div>
+        <div class="meta-item"><span class="meta-icon">↓</span><div><strong id="downloadCount">...</strong><small>Total downloads</small></div></div>
+        <div class="meta-item"><span class="meta-icon">✓</span><div><strong>Verified</strong><small>Official download</small></div></div>
+        <div class="version-inline"><span>VERSION</span><strong id="version">1.0</strong><i></i><span>52 MB</span><i></i><span id="updated">July 2026</span></div>
+      </div>
+    </section>
 
-    <!-- Main Script -->
-    <script src="script.js"></script>
+    <section class="ticker" aria-label="App categories"><div class="ticker-track"><span>LIVE TELEVISION</span><b>✳</b><span>SPORTS</span><b>✳</b><span>MOVIES</span><b>✳</b><span>BREAKING NEWS</span><b>✳</b><span>ENTERTAINMENT</span><b>✳</b><span>LIVE TELEVISION</span><b>✳</b><span>SPORTS</span><b>✳</b><span>MOVIES</span><b>✳</b><span>BREAKING NEWS</span><b>✳</b><span>ENTERTAINMENT</span><b>✳</b></div></section>
+
+    <section class="features section-pad" id="features">
+      <div class="section-top"><div><span class="section-label">01 — THE EXPERIENCE</span><h2>Everything you love.<br><em>All in one place.</em></h2></div><p class="section-intro">From live moments to movie nights, bring more of what you enjoy to one simple screen.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card feature-main"><div class="feature-number">01 / WATCH</div><div class="feature-symbol">▣</div><h3>Live TV,<br>always on.</h3><p>Explore 100+ live TV channels and keep up with what matters.</p><span class="feature-watermark">TV</span></article>
+        <article class="feature-card feature-sports"><div class="feature-number">02 / PLAY</div><div class="feature-symbol">◎</div><h3>Feel every<br>moment.</h3><p>Football, cricket and more live sports action.</p><span class="feature-watermark">LIVE</span></article>
+        <article class="feature-card feature-movies"><div class="feature-number">03 / DISCOVER</div><div class="feature-symbol">▤</div><h3>Movie nights,<br>reimagined.</h3><p>Enjoy popular movie channels and entertainment.</p><span class="feature-watermark">CINEMA</span></article>
+        <article class="feature-card feature-news"><div class="feature-number">04 / KNOW</div><div class="feature-symbol">⌁</div><h3>Stay in<br>the know.</h3><p>Catch breaking news and updates whenever you need them.</p><span class="feature-watermark">NEWS</span></article>
+        <article class="feature-card feature-quality"><div class="feature-number">05 / ENJOY</div><div class="feature-symbol">◈</div><h3>Made to<br>flow.</h3><p>Fast streaming and a clear viewing experience.</p><span class="feature-watermark">HD</span></article>
+        <article class="feature-card feature-devices"><div class="feature-number">06 / CONNECT</div><div class="feature-symbol">▱</div><h3>Your screen.<br>Your choice.</h3><p>Designed for Android phones, TVs and TV boxes.</p><span class="feature-watermark">CX</span></article>
+      </div>
+    </section>
+
+    <section class="screenshots section-pad" id="screenshots">
+      <div class="section-top"><div><span class="section-label">02 — TAKE A CLOSER LOOK</span><h2>A better way<br><em>to tune in.</em></h2></div><p class="section-intro">A glimpse of the CriticX TV interface. Swipe through the screens and see what’s waiting.</p></div>
+      <div class="preview-shell"><div class="preview-heading"><span><i></i> APP PREVIEW</span><span>SCROLL TO EXPLORE ↘</span></div><div class="screen-list"><figure><img src="assets/screen1.png" alt="CriticX TV app screenshot 1" loading="lazy"><figcaption><b>01</b> HOME EXPERIENCE</figcaption></figure><figure><img src="assets/screen2.png" alt="CriticX TV app screenshot 2" loading="lazy"><figcaption><b>02</b> CHANNEL DISCOVERY</figcaption></figure><figure><img src="assets/screen3.png" alt="CriticX TV app screenshot 3" loading="lazy"><figcaption><b>03</b> YOUR ENTERTAINMENT</figcaption></figure></div></div>
+    </section>
+
+    <section class="why section-pad" id="why-criticx"><div class="why-panel"><div class="why-copy"><span class="section-label">03 — BUILT AROUND YOU</span><h2>Simple to use.<br><em>Easy to enjoy.</em></h2><p>All your favorite viewing categories come together in one accessible experience, whether you’re watching on your phone or your TV.</p><a href="#downloadBtn" class="text-link">Get CriticX TV <span>↗</span></a></div><ul class="why-list"><li><span>01</span>100+ Live TV Channels <b>↗</b></li><li><span>02</span>Live Sports Streaming <b>↗</b></li><li><span>03</span>Movies &amp; Entertainment <b>↗</b></li><li><span>04</span>HD Streaming Experience <b>↗</b></li><li><span>05</span>Android TV Support <b>↗</b></li><li><span>06</span>Regular App Updates <b>↗</b></li><li><span>07</span>Safe &amp; Secure APK <b>↗</b></li><li><span>08</span>User Friendly Interface <b>↗</b></li></ul></div></section>
+
+    <section class="whats-new section-pad" id="whats-new"><div class="update-layout"><div><span class="section-label">04 — FRESH FROM THE TEAM</span><h2>Always moving<br><em>forward.</em></h2><p class="section-intro">We keep improving the experience so you can focus on what you came to watch.</p></div><div class="version-card"><div class="version-card-top"><span class="update-dot"></span><span>LATEST RELEASE</span><span class="release-mark">CX / UPDATE</span></div><h3 id="latest">Initial Official Release</h3><div class="release-list"><p><span>+</span> Improved Streaming Performance</p><p><span>+</span> Better Android TV Support</p><p><span>+</span> UI Improvements</p><p><span>+</span> Performance Optimizations</p></div><div class="release-foot"><span>CRITICX TV</span><span>BUILT TO KEEP YOU WATCHING ↗</span></div></div></div></section>
+
+    <section class="community section-pad" id="community"><div class="community-panel"><div class="community-copy"><span class="section-label">05 — STAY IN THE LOOP</span><h2>Good things<br>are better <em>together.</em></h2><p>Join the official community for app updates, announcements, new channels and support.</p></div><div class="community-links"><a id="messengerBtn" href="https://m.me/j/AbZlksWYYxeOmd2c/?send_source=gc%3Acopy_invite_link_t" target="_blank" rel="noopener noreferrer" class="messenger"><span>01</span><b>Join Messenger Group</b><i>↗</i></a><a id="telegramBtn" href="https://t.me/+6hda0WkWAYNiMWQ1" target="_blank" rel="noopener noreferrer" class="telegram"><span>02</span><b>Join Telegram Group</b><i>↗</i></a><a id="telegramChannelBtn" href="https://t.me/criticxtv" target="_blank" rel="noopener noreferrer" class="telegram"><span>03</span><b>Follow Telegram Channel</b><i>↗</i></a><a id="facebookBtn" href="https://facebook.com/criticxtv" target="_blank" rel="noopener noreferrer" class="messenger"><span>04</span><b>Follow Facebook Page</b><i>↗</i></a></div></div></section>
+
+    <section class="ads section-pad" id="sponsored"><div class="ad-inner"><div><span class="section-label">PARTNERS &amp; SUPPORTERS</span><h2>Sponsored space</h2></div><div id="bannerAd" class="banner-ad"><span>ADVERTISEMENT</span><b>Your brand could be here.</b></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-main"><a class="footer-brand" href="#home"><img src="assets/logo.png" alt=""/> CRITIC<span>X</span> TV</a><p>Your screen. Your world.<br>Entertainment, brought together.</p><a class="back-top" href="#home">BACK TO TOP ↑</a></div><div class="footer-bottom"><span>© 2026 CRITICX TV. ALL RIGHTS RESERVED.</span><div class="footer-links"><a href="pages/privacy.html">Privacy Policy</a><span>·</span><a href="pages/terms.html">Terms of Service</a></div><span>MADE FOR YOUR SCREEN.</span></div></footer>
+
+  <div id="downloadPopup" class="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle"><div class="popup-box"><div class="popup-mark">CX</div><div class="popup-kicker">CRITICX TV DOWNLOAD</div><h2 id="popupTitle">Preparing Download...</h2><p>Please wait while we prepare your download.</p><h1 id="countdown">3</h1><div class="loader"></div><p class="popup-note">Your download will start automatically...</p></div></div>
+
+  <script type="module" src="firebase/firebase-service.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
